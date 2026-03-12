@@ -1,0 +1,29 @@
+.custom-navbar {
+  background: linear-gradient(90deg, #004587, #2fb4e9);
+}
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.custom-navbar .nav-link {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffd700;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.logo-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  object-fit: cover;
+}
