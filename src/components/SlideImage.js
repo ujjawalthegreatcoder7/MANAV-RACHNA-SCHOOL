@@ -1,7 +1,9 @@
-import slide1 from "../slideimage1.png";
+// import slide1 from "../slideimage1.png";
 import slide2 from "../slideimage2.png";
-import slide3 from "../slideimage3.png";
+// import slide3 from "../slideimage3.png";
 import slide4 from "../slideimage4.png";
+// import slide5 from "../slide5.jpeg";
+import slide6 from "../slide6.png";
 
 import "../styles/SlideImage.css";
 
@@ -18,7 +20,7 @@ function SlideImage() {
       <div className="carousel-inner">
 
         <div className="carousel-item active">
-          <img src={slide1} className="d-block w-100" alt="slide1" />
+          <img src={slide6} className="d-block w-100" alt="slide1" />
         </div>
 
         <div className="carousel-item">
@@ -26,7 +28,7 @@ function SlideImage() {
         </div>
 
         <div className="carousel-item">
-          <img src={slide3} className="d-block w-100" alt="slide3" />
+          <img src={slide6} className="d-block w-100" alt="slide3" />
         </div>
 
         <div className="carousel-item">
