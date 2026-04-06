@@ -1,6 +1,6 @@
 /* MAIN CONTAINER */
 .vision-container {
-  padding: 20px 20px; 
+  padding: 10px 10px; 
   background: #f5f5f5;
 
   display: flex;
@@ -9,12 +9,21 @@
   text-align: center;
 }
 
+.vision-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
 /* OPTIONAL SPACING FIXES */
 .organizer {
-  /* margin-top: 3rem; */
+  margin-top: 1rem;
 }
 .vision{
-  /* margin-top: 3rem;   */
+  margin-top: 1rem;  
 }
 /* TITLE */
 .vision-title {

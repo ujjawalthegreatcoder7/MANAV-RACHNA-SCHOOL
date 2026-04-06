@@ -1,9 +1,14 @@
-import { FaPhone } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 function ContactUs() {
   return (
-    <a href="tel:+919098991000" className="call-button">
-      <FaPhone />
+    <a
+      href="https://api.whatsapp.com/send?phone=919971289376"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="call-button"
+    >
+      <FaWhatsapp />
     </a>
   );
 }
