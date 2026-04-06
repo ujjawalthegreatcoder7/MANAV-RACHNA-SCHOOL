@@ -1,4 +1,5 @@
 // import Footer from "../components/Footer";
+import ContactUs from "../components/ContactUs";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import SlideImage from "../components/SlideImage";
@@ -10,14 +11,13 @@ import WhyTCF from "../homeSections/WhyTCF";
 function Home() {
   return (
     <div>
-      <Navbar/>
       <SlideImage/>
       
       <Vsion/>
       <WhyTCF/>
       <AboutTCF/>
       <Organiser/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

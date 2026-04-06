@@ -2,9 +2,9 @@ import "../styles/vision.css";
 
 function Organiser() {
   return (
-    <div className="vision-container organizer">
+    <div className="vision-container ">
 
-      <h2 className="vision-title">Organizer</h2>
+      <h2 className="vision-title organizer">Organizer</h2>
 
       <div className="vision-line"></div>
 

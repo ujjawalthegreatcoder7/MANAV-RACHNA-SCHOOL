@@ -1,10 +1,10 @@
 import "../styles/vision.css";
 
-function WhyTCF() {
+function WhyTCF() { 
   return (
-    <div className="vision-container whytcf">
+    <div className="vision-container ">
 
-      <h2 className="vision-title">Why TCF</h2>
+      <h2 className="vision-title whytcf">Why TCF</h2>
 
       <div className="vision-line"></div>
 

@@ -28,23 +28,19 @@ function Navbar() {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#vision">Vision</a>
+                            <a className="nav-link text-white" href="vision">Vision</a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#why">Why TCF</a>
+                            <a className="nav-link text-white" href="why">Why TCF</a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#about">About TCF</a>
+                            <a className="nav-link text-white" href="about">About TCF</a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#features">What We Bring</a>
-                        </li>
-
-                        <li className="nav-item">
-                            <a className="nav-link text-white" href="#organiser">Organiser</a>
+                            <a className="nav-link text-white" href="organiser">Organiser</a>
                         </li>
 
                     </ul>

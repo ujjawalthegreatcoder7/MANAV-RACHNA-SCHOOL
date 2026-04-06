@@ -1,32 +1,121 @@
-.vision-container{
-padding:60px 10%;
-background:#f5f5f5;
-display: grid;
-justify-content: center;
+/* MAIN CONTAINER */
+.vision-container {
+  /* padding: 20px 20px;  */
+  background: #f5f5f5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* OPTIONAL SPACING FIXES */
+.organizer {
+  margin-top: 3rem;
+}
+.vision{
+  margin-top: 3rem;  
+}
+/* TITLE */
+.vision-title {
+  color: #2f5bd3;
+  font-size: 36px;
+  font-weight: 700;
+  /* margin-bottom: 10px; */
 }
 .whytcf{
-    margin-top: -6.5rem;
+  /* margin-top: -7rem; */
 }
-.organizer{
-    margin-top: -5rem;
-}
-.vision-title{
-color:#2f5bd3;
-font-size:36px;
-font-weight:700;
-margin-bottom:10px;
-}
-
-.vision-line{
-width:100%;
-height:3px;
-background:#b7c4e3;
-margin-bottom:20px;
+/* LINE */
+.vision-line {
+  width: 80px;
+  height: 4px;
+  background: #2f5bd3;
+  margin: 10px auto 25px;
+  border-radius: 10px;
 }
 
-.vision-text{
-font-size:18px;
-line-height:1.8;
-color:#333;
-max-width:1000px;
+/* TEXT (PERFECT CENTER) */
+.vision-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+/* CARD CONTAINER */
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* CARD */
+.flip-card {
+  width: 260px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+/* INNER */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* HOVER EFFECT */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* BOTH SIDES */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  text-align: center;
+  backface-visibility: hidden;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* FRONT */
+.flip-card-front {
+  background: linear-gradient(135deg, #004587, #2fb4e9);
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* BACK */
+.flip-card-back {
+  background: #ffffff;
+  color: #333;
+  transform: rotateY(180deg);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* HOVER LIFT EFFECT */
+.flip-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.whatwebring{
+  margin-top: -7rem;
 }

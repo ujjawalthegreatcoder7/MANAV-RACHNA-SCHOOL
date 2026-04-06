@@ -4,7 +4,7 @@ function Vision() {
   return (
     <div className="vision-container">
 
-      <h2 className="vision-title">Vision</h2>
+      <h2 className="vision-title vision">Vision</h2>
 
       <div className="vision-line"></div>
 
