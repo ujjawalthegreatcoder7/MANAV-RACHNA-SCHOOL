@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap');
 /* Navbar background */
 .custom-navbar{
     background: linear-gradient(90deg, #004587, #2fb4e9);
     padding: 10px 0;
     position: relative;
     z-index: 1000;
-}
+} 
 
 /* Logo */
 .logo-circle{
@@ -92,8 +93,8 @@
   height: 60px;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+   align-items: center; 
+   justify-content: center; 
 
   background: linear-gradient(135deg, #004587, #2fb4e9);
   color: white;
@@ -146,9 +147,9 @@
 
 /* Container */
 .social-icons {
-  display: flex;
+  /* display: flex; */
   gap: 12px;              /* spacing between icons */
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 /* Each icon */
@@ -171,39 +172,62 @@
   box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
-/* Footer main */
 /* 🔥 Gradient Footer */
 .footer {
   background: linear-gradient(135deg, #004587, #2fb4e9);
   color: white;
   padding: 60px 80px;
   font-family: "Segoe UI", sans-serif;
+  margin-top: auto;   /* 🔥 ye important hai */
 }
-/* Grid layout */
+/* ✅ Container (use ONLY GRID, not flex) */
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(4, 1fr); */
   gap: 40px;
 }
 
-/* Column headings */
-.footer-col h3 {
-  color: white;
+/* Column */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
+/* Headings */
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Text */
 .footer-col p {
   color: #e6e6e6;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .footer-col p:hover {
   color: #ffffff;
 }
-/* Strong headings (cities etc.) */
+
+/* Links */
+.footer-col a {
+  text-decoration: none;
+  color: #e6e6e6;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+/* Strong headings */
 .footer-col strong {
-  display: block;
   margin-top: 10px;
   font-size: 14px;
-  color: #000;
+  color: #fff;
 }
 
 /* Logo */
@@ -212,14 +236,12 @@
   margin-bottom: 15px;
 }
 
-/* Social container */
+/* Social Icons */
 .social-icons {
   display: flex;
   gap: 12px;
-  margin-top: 10px;
 }
 
-/* Social icons */
 .social-icons a {
   width: 40px;
   height: 40px;
@@ -245,43 +267,22 @@
   transform: translateY(-5px) scale(1.1);
 }
 
-/* Links inside footer */
-.footer-col a {
-  text-decoration: none;
-  color: #333;
-}
-
-.footer-col a:hover {
-  color: #2fb4e9;
-}
-
-/* spacing for sub sections */
+/* Utility spacing */
 .mt {
   margin-top: 20px;
 }
-
-🔥 Responsive
-@media (max-width: 1000px) {
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .footer {
-    padding: 40px 20px;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-  }
-}
-
+.footer-coll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;   /* 🔥 ye line important hai */
+}-----------------------------------
+/* 📱 RESPONSIVE DESIGN */
 /* Tablet */
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
   }
 }
 
@@ -289,11 +290,11 @@
 @media (max-width: 600px) {
   .footer {
     padding: 40px 20px;
+    text-align: center;
   }
 
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: center;
   }
 
   .footer-logo {
@@ -303,8 +304,14 @@
   .social-icons {
     justify-content: center;
   }
+}
+.footer-coll h3 {
+  font-family: 'Playfair Display', serif;  /* 🔥 classy heading */
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-  .footer-col {
-    margin-bottom: 20px;
-  }
+.footer-coll img {
+  font-family: 'Poppins', sans-serif;
 }

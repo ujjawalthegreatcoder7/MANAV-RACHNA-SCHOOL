@@ -1,14 +1,15 @@
 import "../styles/navbar.css";
 import logo from '../logoo.png';
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg custom-navbar">
             <div className="container">
 
-        <a className="navbar-brand d-flex align-items-center" href="#">
-          <img src={logo} alt="TCF Logo" className="logo-circle me-2" />
-        </a>
+                <Link className="navbar-brand d-flex align-items-center" to="/">
+                    <img src={logo} alt="TCF Logo" className="logo-circle me-2" />
+                </Link>
 
                 {/* Hamburger menu */}
                 <button
@@ -24,23 +25,23 @@ function Navbar() {
                     <ul className="navbar-nav ms-auto">
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="home">Home</a>
+                            <Link className="nav-link text-white" to="/home">Home</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="vision">Vision</a>
+                            <Link className="nav-link text-white" to="/vision">Vision</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="why">Why TCF</a>
+                            <Link className="nav-link text-white" to="/why">Why TCF</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="about">About TCF</a>
+                            <Link className="nav-link text-white" to="/about">About TCF</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="organiser">Organiser</a>
+                            <Link className="nav-link text-white" to="/organiser">Organiser</Link>
                         </li>
 
                     </ul>

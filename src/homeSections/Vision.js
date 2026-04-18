@@ -1,8 +1,8 @@
 import "../styles/vision.css";
 
-function Vision() {
+function Vision({ fullPage = false }) {
   return (
-    <div className="vision-container">
+    <div className={`vision-container ${fullPage ? "vision-page" : ""}`}>
 
       <h2 className="vision-title vision">Vision</h2>
 

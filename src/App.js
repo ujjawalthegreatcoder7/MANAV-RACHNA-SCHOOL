@@ -1,6 +1,6 @@
 import './App.css';
 import ContactUs from './components/ContactUs';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from './pages/Home';
 import Vision from './homeSections/Vision';
@@ -12,23 +12,28 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
+      
+      {/* 🔥 Navbar har page pe */}
+      <Navbar />
 
-      {/* 🔥 All pages render here */}
-        <Navbar/>
-
+      {/* 🔥 Routes */}
       <Routes>
-        <Route path="/home" element={ <Home/> } />
-        <Route path="/vision" element={<Vision/>} />
-        <Route path="/about" element={<AboutTCF/>} />
-        <Route path="/why" element={<WhyTCF/>} />
-        <Route path="/Organiser" element={<Organiser/>} />
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/vision" element={<Vision fullPage={true} />} />
+        <Route path="/about" element={<AboutTCF />} />
+        <Route path="/why" element={<WhyTCF />} />
+        <Route path="/organiser" element={<Organiser />} />
       </Routes>
-      <Footer/>
-      {/* 🔥 Yeh har page pe dikhega */}
+
+      {/* 🔥 Footer har page pe */}
+      <Footer />
+
+      {/* 🔥 Contact form har page pe */}
       <ContactUs />
 
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
